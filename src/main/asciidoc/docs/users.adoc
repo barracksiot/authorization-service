@@ -1,0 +1,43 @@
+== Users
+
+
+=== Login
+A `POST` request with an authentication logs in the user.
+include::{snippets}/users/login/request-fields.adoc[]
+
+==== Request
+include::{snippets}/users/login/http-request.adoc[]
+
+==== Response
+include::{snippets}/users/login/http-response.adoc[]
+include::{snippets}/users/login/response-fields.adoc[]
+
+
+=== Get authenticated user's profile
+A `GET` request returns the current user information.
+
+WARNING: This endpoint needs a token in the request.
+
+==== Request
+include::{snippets}/users/get-authenticated/http-request.adoc[]
+
+==== Response
+include::{snippets}/users/get-authenticated/http-response.adoc[]
+include::{snippets}/users/get-authenticated/response-fields.adoc[]
+
+
+=======
+
+=== Get user's profile by ID
+A `GET` request with an ID as an argument returns the information for the user with this ID.
+
+WARNING: This endpoint needs a token in the request.
+
+include::{snippets}/users/get-by-id/path-parameters.adoc[]
+
+==== Request
+include::{snippets}/users/get-by-id/http-request.adoc[]
+
+==== Response
+include::{snippets}/users/get-by-id/http-response.adoc[]
+include::{snippets}/users/get-by-id/response-fields.adoc[]

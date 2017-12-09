@@ -1,0 +1,29 @@
+== Users
+
+
+=== Get user's profile by ID
+A `GET` request with an ID as an argument returns the information for the user with this ID.
+
+include::{snippets}/users/get-by-id/path-parameters.adoc[]
+
+==== Request
+include::{snippets}/users/get-by-id/http-request.adoc[]
+include::{snippets}/users/get-by-id/curl-request.adoc[]
+
+==== Response
+include::{snippets}/users/get-by-id/http-response.adoc[]
+include::{snippets}/users/get-by-id/response-fields.adoc[]
+
+
+=== Edit user's status
+A `PUT` request with an ID and a status as arguments changes the status for the user with this ID.
+
+include::{snippets}/users/edit-status/path-parameters.adoc[]
+
+==== Request
+include::{snippets}/users/edit-status/http-request.adoc[]
+include::{snippets}/users/edit-status/curl-request.adoc[]
+
+==== Response
+include::{snippets}/users/edit-status/http-response.adoc[]
+include::{snippets}/users/edit-status/response-fields.adoc[]

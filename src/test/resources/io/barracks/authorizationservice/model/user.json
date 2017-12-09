@@ -1,0 +1,12 @@
+{
+  "id": "anId",
+  "firstName": "aFirstName",
+  "lastName": "aLastName",
+  "email": "anEmail",
+  "encryptedPassword": "anEncryptedPassword",
+  "status": "ACTIVE",
+  "phone": "aPhone",
+  "company": "aCompany",
+  "apiKey": "anApiKey",
+  "disabled": "false"
+}

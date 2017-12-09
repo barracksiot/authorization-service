@@ -1,0 +1,37 @@
+== Tokens
+
+WARNING: The following endpoints need a token in the request.
+
+=== Create a token
+A `POST` request creates a token.
+
+include::{snippets}/tokens/create/request-fields.adoc[]
+
+==== Request
+include::{snippets}/tokens/create/http-request.adoc[]
+
+==== Response
+
+include::{snippets}/tokens/create/http-response.adoc[]
+
+=== Revoke a token
+A `PUT` request revokes a token.
+
+==== Request
+include::{snippets}/tokens/revoke/http-request.adoc[]
+
+==== Response
+
+include::{snippets}/tokens/revoke/http-response.adoc[]
+
+
+=== List tokens
+
+A `GET` request lists tokens.
+
+==== Request
+include::{snippets}/tokens/list/http-request.adoc[]
+
+==== Response
+
+include::{snippets}/tokens/list/http-response.adoc[]

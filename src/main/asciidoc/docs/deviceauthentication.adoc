@@ -1,0 +1,11 @@
+== Device Authentication
+
+=== Get authenticated user's profile
+A `POST` request with an user's api key as an argument links this device to the user.
+include::{snippets}/deviceauthentication/authenticate/request-fields.adoc[]
+
+==== Request
+include::{snippets}/deviceauthentication/authenticate/http-request.adoc[]
+
+==== Response
+include::{snippets}/deviceauthentication/authenticate/http-response.adoc[]

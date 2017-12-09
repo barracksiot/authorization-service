@@ -1,0 +1,38 @@
+= Authentication API
+
+The following document describes the Authentication API of Barracks.
+
+== Before you start
+
+IMPORTANT: In order to use the endpoints listed in this documentation, you'll have to prefix each URL with the correct _Base URL_.
+
+=== Base URL
+If you use the SaaS version of Barracks available on https://app.barracks.io, the _Base URL_ of the Authentication API is https://app.barracks.io/api/auth. +
+If you use an On Premise version of Barracks and you're not sure what your _Base URL_ is, please contact us.
+
+=== Authentication
+Some endpoints listed in this documentation need a token to authenticate the request. +
+To authenticate a request, do as follow:
+
+* Use the _Login_ endpoint to get a temporary token or generate a permanent token
+* Set the _x-auth-token_ header with your token to each of your requests
+
+=== Request example
+[source,bash]
+----
+$ curl 'https://app.barracks.io/api/auth/me' -H 'Accept: application/json' -H 'x-auth-token:YzEyYThjMi01ODhjLTRie9.eyJqdGkiOiI4yJhbGciOiJIUzUxMiJ...'
+----
+
+=== Having difficulties?
+If you don't find the endpoint you are looking for or you encounter any issue with that documentation, please mailto:support@barracks.io[let us know]!
+
+
+include::docs/users.adoc[]
+
+include::docs/tokens.adoc[]
+
+include::docs/passwords.adoc[]
+
+include::docs/registrations.adoc[]
+
+include::docs/deviceauthentication.adoc[]

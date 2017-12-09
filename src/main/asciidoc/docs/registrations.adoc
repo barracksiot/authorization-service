@@ -1,0 +1,12 @@
+== Registration
+
+=== Registers user
+A `POST` request creates an account for the user.
+include::{snippets}/registrations/create/request-fields.adoc[]
+
+==== Request
+include::{snippets}/registrations/create/http-request.adoc[]
+
+==== Response
+include::{snippets}/registrations/create/http-response.adoc[]
+
